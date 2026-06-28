@@ -41,7 +41,7 @@ jobs:
           composer-options: '--no-scripts'
 
       - name: Cache Pint results
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: .cache/pint/
           key: pint-cache-${{ hashFiles('pint.json') }}
